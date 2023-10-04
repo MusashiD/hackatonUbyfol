@@ -13,7 +13,6 @@
   .banner {
     width: 100%;
     height: 863px;
-    background-color: red;
     display: flex;
     align-items: end;
     justify-content: end;
@@ -65,8 +64,8 @@
 
   .aboutHack {
     width: 100%;
-    height: 500px;
-    background-color: #0c293b;
+    height: 550px;
+    background-color: #00ac58;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +75,6 @@
     .divFigure {
       width: 50%;
       height: 100%;
-      border: 1px solid black;
       display: flex;
       align-items: center;
       justify-content: right;
@@ -85,19 +83,13 @@
       text-align: center;
 
       .figure {
-        width: 400px;
-        height: 400px;
-        background-image: url(../assets/img/mial.png);
-        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/programmer.png);
+        background-size: 70%;
         background-position: center;
         background-repeat: no-repeat;
-        border-radius: 50%;
-        background-clip: content-box;
-        mask-image: radial-gradient(
-          circle at center,
-          black 30%,
-          transparent 100%
-        );
+     
       }
     }
 
@@ -105,7 +97,6 @@
       width: 50%;
       padding-left: 2%;
       height: 100%;
-      border: 1px solid black;
       display: flex;
       align-items: left;
       flex-direction: column;
@@ -120,22 +111,48 @@
         h3 {
           font-family: DiscoverRegular;
           font-size: 50px;
-          color: #00ac58;
+          color: #032d47;
         }
       }
 
       .body {
         width: 100%;
         height: 80%;
-        background-color: blue;
         display: flex;
         align-items: left;
         text-align: left;
+        flex-direction: column;
 
-        span {
-            font-family: DiscoverRegular;
+        .text {
+            display: flex;
+            width: 100%;
+            height: 60%;
+            
+          span {
+            font-family: DiscoverLight;
             font-size: 20px;
             color: white;
+            font-weight: bold;
+          }
+        }
+
+        .line {
+            display: flex;
+            width: 100%;
+            height: 10%;
+            align-items: center;
+
+            fa-icon {
+                color: #04395a;
+                margin-right: 8px;
+                font-size: 20px;
+            }
+
+            span {
+                font-family: DiscoverLight;
+                font-weight: bold;
+                color: white;
+            }
         }
       }
     }
