@@ -1,5 +1,14 @@
 <div class="page">
-  <div class="topBar"></div>
+  <div class="topBar">
+    <div class="logo"></div>
+    <div class="sections">
+      <div class="section"><a href="#aboutHack">Sobre</a></div>
+      <div class="section"><a href="#moreAbout">Cronograma</a></div>
+      <div class="section"><a href="#goals">Objetivo</a></div>
+      <div class="section"><a href="#carrousel">Galeria</a></div>
+      <div class="section"><a href="#supporters">Apoiadores</a></div>
+    </div>
+  </div>
   <div class="banner">
     <div class="inscription">
       <button (click)="subscribe()">INSCREVER-SE</button>
@@ -11,13 +20,16 @@
       </div>
     </div>
   </div>
-  <div class="aboutHack">
+  <div id="aboutHack" class="aboutHack">
     <div class="divFigure">
       <div class="figure"></div>
     </div>
     <div class="aboutTheHack">
       <div class="title">
-        <h3>Sobre o Hackathon</h3>
+        <h3>
+          <span style="color: #076caf">[</span> Sobre o Hackathon
+          <span style="color: #076caf">]</span>
+        </h3>
       </div>
       <div class="body">
         <div class="text">
@@ -38,7 +50,7 @@
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
-          <span>Inscrição gratuita via Sympla</span>
+          <span>Inscrição gratuita via Sympla - Individual ou em grupo</span>
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
@@ -49,9 +61,12 @@
       </div>
     </div>
   </div>
-  <div class="moreAbout">
+  <div id="moreAbout" class="moreAbout">
     <div class="title">
-      <span>Cronograma do evento</span>
+      <span
+        ><span style="color: #36bd7c">[</span> Cronograma do evento
+        <span style="color: #36bd7c">]</span></span
+      >
     </div>
     <div class="lineItens">
       <div (click)="hideOrShowPin('27')" class="item">
@@ -206,9 +221,12 @@
       </div>
     </div>
   </div>
-  <div class="goals">
+  <div id="goals" class="goals">
     <div class="titleGoals">
-      <span>Objetivo do Hackathon</span>
+      <span
+        ><span style="color: #076caf">[</span> Objetivo do Hackathon
+        <span style="color: #076caf">]</span></span
+      >
     </div>
     <div class="textGoals">
       <span
@@ -239,6 +257,33 @@
         criatividade, a resolução de problemas e a colaboração participativa e
         intensiva.
       </span>
+    </div>
+  </div>
+  <div id="carrousel" class="carrousel">
+    <div class="title">
+      <span
+        ><span style="color: #3f4041; font-weight: lighter; font-style: italic"
+          >function ( )
+        </span>
+        Galeria de fotos</span
+      >
+    </div>
+    <app-carousel></app-carousel>
+  </div>
+  <div id="supporters" class="supporters">
+    <div class="title">
+      <span
+        ><span style="color: #ee2d39">[</span> Apoiadores
+        <span style="color: #ee2d39">]</span></span
+      >
+    </div>
+    <div class="divSuporters">
+      <div class="supporter1">
+        <div class="image"></div>
+      </div>
+      <div class="supporter2">
+        <div class="image"></div>
+      </div>
     </div>
   </div>
 </div>
