@@ -1,12 +1,16 @@
 <div class="page">
   <div class="topBar">
-    <div class="logo" (click)="redirect()"></div>
+    <div class="logo" (click)="redirect('https://ubyfol.com/')"></div>
     <div class="sections">
       <div class="section"><a href="#aboutHack" appScrollSuave>Sobre</a></div>
-      <div class="section"><a href="#moreAbout" appScrollSuave>Cronograma</a></div>
+      <div class="section">
+        <a href="#moreAbout" appScrollSuave>Cronograma</a>
+      </div>
       <div class="section"><a href="#goals" appScrollSuave>Objetivo</a></div>
       <div class="section"><a href="#carrousel" appScrollSuave>Galeria</a></div>
-      <div class="section"><a href="#supporters" appScrollSuave>Apoiadores</a></div>
+      <div class="section">
+        <a href="#supporters" appScrollSuave>Apoiadores</a>
+      </div>
     </div>
   </div>
   <div class="banner">
@@ -278,11 +282,52 @@
       >
     </div>
     <div class="divSuporters">
-      <div class="supporter1">
-        <div class="image"></div>
+      <div class="divSuportersItens">
+        <div class="supporter1">
+          <div class="image"></div>
+        </div>
+        <div class="supporter2">
+          <div class="image"></div>
+        </div>
       </div>
-      <div class="supporter2">
-        <div class="image"></div>
+      <div class="foot">
+        <div class="footItens">
+          <div class="uby">
+            <span>©2023 UBYFOL - TODOS OS DIREITOS RESERVADOS</span>
+          </div>
+          <div class="russianCorp">
+            <div class="text">
+              <span>Designed and Developed by</span>
+            </div>
+            <div class="figure"></div>
+          </div>
+          <div class="socialMedias">
+            <div
+              (click)="redirect('https://www.instagram.com/Ubyfol/')"
+              class="instagram"
+            ></div>
+            <div
+              (click)="redirect('https://www.facebook.com/Ubyfol/')"
+              class="facebook"
+            ></div>
+            <div
+              (click)="
+                redirect(
+                  'https://www.youtube.com/channel/UCHDjBZSRB75LarmF73nEw9g'
+                )
+              "
+              class="youtube"
+            ></div>
+            <div
+              (click)="redirect('https://www.linkedin.com/company/ubyfol/')"
+              class="linkedin"
+            ></div>
+            <div
+              (click)="redirect('https://vemprauby.gupy.io/')"
+              class="gupy"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

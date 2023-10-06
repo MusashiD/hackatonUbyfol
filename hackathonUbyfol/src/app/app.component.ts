@@ -9,6 +9,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'hackathonUbyfol';
   faCheckCircle = faCheckCircle;
+
   selectedDiv: string = '27';
   div27: any;
   div28: any;
@@ -29,7 +30,7 @@ export class AppComponent {
     switch (pin) {
       case '27':
         if (this.div27) {
-          this.selectedDiv = '27'
+          this.selectedDiv = '27';
           if (this.div27.style.display == 'none') {
             this.div27.style.display = 'block';
             this.div28.style.display = 'none';
@@ -42,7 +43,7 @@ export class AppComponent {
 
       case '28':
         if (this.div28) {
-          this.selectedDiv = '28'
+          this.selectedDiv = '28';
           if (this.div28.style.display == 'none') {
             this.div28.style.display = 'block';
             this.div27.style.display = 'none';
@@ -55,7 +56,7 @@ export class AppComponent {
 
       case '29':
         if (this.div29) {
-          this.selectedDiv = '29'
+          this.selectedDiv = '29';
           if (this.div29.style.display == 'none') {
             this.div29.style.display = 'block';
             this.div28.style.display = 'none';
@@ -75,10 +76,7 @@ export class AppComponent {
     );
   }
 
-  redirect() {
-    window.open(
-      'https://ubyfol.com/',
-      '_blank'
-    );
+  redirect(page: string) {
+    window.open(page, '_blank');
   }
 }
