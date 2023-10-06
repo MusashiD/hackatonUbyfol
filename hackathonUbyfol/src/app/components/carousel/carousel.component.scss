@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +9,6 @@ body {
   display: grid;
   place-items: center;
   background: #100721;
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 400;
 }
 
 .container {
@@ -22,7 +19,7 @@ body {
   gap: 10px;
 
   div {
-    flex: 0 0 120px;
+    flex: 0 0 270px;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -31,26 +28,22 @@ body {
     overflow: hidden;
 
     &:nth-of-type(1) {
-      background: url("https://images.pexels.com/photos/1845208/pexels-photo-1845208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url(../../../assets/img/book.png)
         no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("https://images.pexels.com/photos/36469/woman-person-flowers-wreaths.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url(../../../assets/img/pencil.png)
         no-repeat 50% / cover;
     }
     &:nth-of-type(3) {
-      background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url(../../../assets/img/notebooks.png)
         no-repeat 50% / cover;
     }
     &:nth-of-type(4) {
-      background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      background: url(../../../assets/img/shirt.png)
         no-repeat 50% / cover;
     }
-    &:nth-of-type(5) {
-      background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-        no-repeat 50% / cover;
-    }
-
+    
     .content {
       font-size: 1.5rem;
       color: #fff;
@@ -64,7 +57,7 @@ body {
       background: rgb(2, 2, 46);
       background: linear-gradient(
         0deg,
-        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(0, 0, 0, 0.676) 0%,
         rgba(255, 255, 255, 0) 100%
       );
       transform: translatey(100%);
@@ -72,6 +65,7 @@ body {
       visibility: hidden;
 
       span {
+        font-family: DiscoverRegular;
         display: block;
         margin-top: 5px;
         font-size: 1.2rem;
@@ -80,7 +74,7 @@ body {
 
     &:hover {
       flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #7645d8;
+      box-shadow: 1px 3px 15px #10b163;
       transform: translatey(-30px);
     }
 

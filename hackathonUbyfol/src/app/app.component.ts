@@ -74,4 +74,11 @@ export class AppComponent {
       '_blank'
     );
   }
+
+  redirect() {
+    window.open(
+      'https://ubyfol.com/',
+      '_blank'
+    );
+  }
 }
