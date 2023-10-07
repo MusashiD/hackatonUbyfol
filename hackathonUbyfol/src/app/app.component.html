@@ -17,10 +17,10 @@
     <div class="inscription">
       <button (click)="subscribe()">INSCREVER-SE</button>
       <div class="about" style="margin-top: 1.5%">
-        <span>O Hackathon inicia-se no dia: 27/10/2023 às 19:00 horas</span>
+        <span>O Hackathon será presencial em Uberaba - MG, e inicia no dia 27 de Outubro, as 19h</span>
       </div>
-      <div class="about">
-        <span>Ultimo dia para inscrição: XX</span>
+      <div class="about" style="margin-top: 20px;">
+        <span>Vagas limitadas!</span>
       </div>
     </div>
   </div>
@@ -46,20 +46,20 @@
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
-          <span>Data: 27/10/2023 - 19:00 à 29/10/2023 - 14:00</span>
+          <span>Data: de 27 de Outubro à 29 de Outubro</span>
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
-          <span>Tamanho do time: 4 a 6 pessoas</span>
+          <span>Participantes: Serão permitidos 4 a 6 participantes por grupo. É possível inscrever equipes completas</span>
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
-          <span>Inscrição gratuita via Sympla - Individual ou em grupo</span>
+          <span>Local: Faculdades Associadas de Uberaba</span>
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
           <span
-            >Local: Faculdades Associadas de Uberaba - Fazu, Uberaba - MG</span
+            >As inscrições são gratuitas e abertas ao público. Teremos vagas limitadas. Todos os inscritos serão avaliados por uma comissão das instituições envolvidas, sendo os selecionados comunicados via e-mail no dia 19 de Outubro</span
           >
         </div>
       </div>
@@ -234,45 +234,33 @@
     </div>
     <div class="textGoals">
       <span
-        >A equipe de competidores e o grupo de participantes trabalham em ideias
-        e projetos durante o hackathon de inovação e empreendedorismo em uma
-        corporação. Suas atribuições podem incluir: Gerar ideias: A equipe de
-        competidores deve trabalhar em conjunto para gerar ideias inovadoras e
-        criativas, que possam ser desenvolvidas em projetos viáveis durante o
-        hackathon. Desenvolver projetos: Depois de selecionar uma ou mais
-        ideias, a equipe de competidores deve trabalhar em conjunto para
-        desenvolver projetos concretos, usando tecnologias, metodologias e
-        ferramentas de inovação e empreendedorismo. Apresentar os projetos: No
-        final do hackathon, a equipe de competidores deve apresentar seus
-        projetos para a equipe de jurados, explicando sua visão, suas soluções e
-        seus resultados. Trabalhar em equipe: Durante todo o hackathon, a equipe
-        de competidores deve trabalhar em equipe, colaborando uns com os outros
-        e resolvendo problemas juntos. Gerenciar o tempo: Para ter sucesso no
-        hackathon, a equipe de competidores deve gerenciar bem o tempo,
-        equilibrando a criação de soluções inovadoras com a pressão do tempo.
-        Ser resiliente: Por fim, a equipe de competidores deve ser resiliente e
-        perseverante, superando os obstáculos e desafios que surgem ao longo do
-        hackathon.</span
+        >Estamos empenhados na solução de desafios concretos, sobretudo aqueles
+        identificados pela Ubyfol no contexto dos setores de inovação e acesso
+        ao mercado. Para alcançar esse objetivo, buscamos envolver participantes
+        capazes de contribuir de maneira significativa, desenvolvendo soluções
+        inovadoras por meio de técnicas amplamente aplicadas no
+        universo das startups.</span
       >
-      <br /><br /><br /><br />
-
-      <span class="lastText">
-        Todas as competências e habilidades devem contribuir para a
-        criatividade, a resolução de problemas e a colaboração participativa e
-        intensiva.
-      </span>
     </div>
   </div>
   <div id="carrousel" class="carrousel">
     <div class="title">
+    </div>
+    <div class="text">
       <span
-        ><span style="color: #3f4041; font-weight: lighter; font-style: italic"
-          >function ( )
-        </span>
-        Galeria de fotos</span
+        >A Ubyfol é uma multinacional brasileira especialista em nutrição
+        vegetal que trabalha no desenvolvimento de produtos especiais,
+        fornecendo macro e micronutrientes para recobrimento de grânulos,
+        tratamento de sementes, mudas, toletes, e aplicações foliares para todas
+        as culturas agrícolas. Fundada em 1985, a empresa atua em todo o
+        território nacional, no Paraguai e em Portugal. Eleita a melhor empresa
+        de nutrição vegetal do Brasil por diversas instituições independentes, a
+        Ubyfol semeia a valorização humana como cultura empresarial e une
+        esforços para levar ao agricultor soluções eficientes, apoiadas no
+        conhecimento científico e no domínio das tecnologias mais
+        recentes.</span
       >
     </div>
-    <app-carousel></app-carousel>
   </div>
   <div id="supporters" class="supporters">
     <div class="title">
@@ -287,7 +275,10 @@
           <div class="image" (click)="redirect('https://fazu.br/')"></div>
         </div>
         <div class="supporter2">
-          <div class="image" (click)="redirect('https://iftm.edu.br/uraparquetecnologico/')"></div>
+          <div
+            class="image"
+            (click)="redirect('https://iftm.edu.br/uraparquetecnologico/')"
+          ></div>
         </div>
       </div>
       <div class="foot">
